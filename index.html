@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guardianes de la Convivencia</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+background:#E8F5E9;
+
+font-family:'Nunito',sans-serif;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.tarjeta{
+
+background:white;
+
+border-radius:25px;
+
+padding:40px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+max-width:700px;
+
+text-align:center;
+
+}
+
+h1{
+
+font-weight:900;
+
+color:#2E7D32;
+
+}
+
+h2{
+
+font-size:22px;
+
+color:#666;
+
+}
+
+.gabi{
+
+font-size:100px;
+
+}
+
+.btn-inicio{
+
+background:#43A047;
+
+border:none;
+
+padding:15px 45px;
+
+font-size:24px;
+
+border-radius:15px;
+
+font-weight:bold;
+
+}
+
+.btn-inicio:hover{
+
+background:#2E7D32;
+
+}
+
+footer{
+
+margin-top:30px;
+
+font-size:15px;
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="tarjeta">
+
+<div class="gabi">
+
+🦉
+
+</div>
+
+<h1>
+
+Guardianes de la Convivencia
+
+</h1>
+
+<h2>
+
+Institución Educativa Técnica
+
+José Gabriel Carvajal García
+
+</h2>
+
+<p class="mt-4 fs-5">
+
+Bienvenido.
+
+Hoy aprenderás sobre emociones,
+
+convivencia y resolución pacífica de conflictos.
+
+</p>
+
+<button
+
+class="btn btn-success btn-lg btn-inicio"
+
+onclick="mostrarMenu()">
+
+COMENZAR
+
+</button>
+
+<footer>
+
+<hr>
+
+Proyecto pedagógico
+
+<br>
+
+<b>Paola Vera</b>
+
+<br>
+
+Orientadora Escolar
+
+<br>
+
+Versión 1.0
+
+</footer>
+
+</div>
+
+</section>
+
+<script>
+
+function mostrarMenu(){
+
+document.body.innerHTML=`
+
+<div class="container py-5">
+
+<h1 class="text-center text-success">
+
+🦉 Guardianes de la Convivencia
+
+</h1>
+
+<p class="text-center fs-4">
+
+Hola.
+
+Soy Gabi.
+
+Escoge un módulo.
+
+</p>
+
+<div class="row g-4 mt-4">
+
+<div class="col-md-4">
+
+<div class="card shadow p-4 text-center">
+
+<h2>😊</h2>
+
+<h4>Emociones</h4>
+
+<button class="btn btn-success">
+
+Entrar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow p-4 text-center">
+
+<h2>🤝</h2>
+
+<h4>Convivencia</h4>
+
+<button class="btn btn-success">
+
+Entrar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow p-4 text-center">
+
+<h2>💬</h2>
+
+<h4>Resolución de conflictos</h4>
+
+<button class="btn btn-success">
+
+Entrar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+</script>
+
+</body>
+
+</html>
